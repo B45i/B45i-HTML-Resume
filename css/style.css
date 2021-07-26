@@ -11,11 +11,47 @@
 .mr-1 {
   margin-right: 1rem; }
 
-.br-r {
+.ml-1 {
+  margin-left: 1rem; }
+
+.mt-1 {
+  margin-top: 1rem; }
+
+.mt-3 {
+  margin-top: 3rem; }
+
+.mb-1 {
+  margin-bottom: 1rem; }
+
+.border-r {
   border-right: solid 1px #ccc; }
 
-.section-heading {
+.border-left {
+  border-left: solid 1px #ccc; }
+
+.to-upper {
   text-transform: uppercase; }
+
+.grid-col-1 {
+  grid-column: 1; }
+
+.grid-col-2 {
+  grid-column: 2; }
+
+.grid-col-3 {
+  grid-column: 3; }
+
+.text-allign-end {
+  text-align: end; }
+
+.separator-v {
+  height: 100%; }
+
+.separator-h {
+  margin: 2rem 0;
+  height: 1px;
+  width: 100%;
+  grid-column: 1 / -1; }
 
 *,
 *::after,
@@ -32,10 +68,14 @@ body {
   font-family: 'Poppins', sans-serif;
   color: #b1b1b1;
   padding: 3rem;
-  background-color: #000; }
+  background: linear-gradient(#ccc, #eee); }
 
 li {
   list-style: none; }
+
+a {
+  text-decoration: none;
+  color: #b1b1b1; }
 
 :is(h1, h2, h3, h4, h5, h6) {
   font-weight: 500;
@@ -46,8 +86,7 @@ li {
   padding: 2rem 3rem;
   display: grid;
   grid-template-columns: 3fr 1fr;
-  grid-auto-rows: minmax(100px, auto);
-  grid-auto-flow: column dense; }
+  grid-template-rows: repeat(10, minmax(10px, auto)); }
 
 .avatar {
   height: 6rem;
@@ -56,8 +95,21 @@ li {
 
 .contact {
   justify-self: end; }
-  .contact-links li > a {
-    text-decoration: none;
-    color: #b1b1b1; }
-    .contact-links li > a i {
-      margin-right: 5px; }
+  .contact-links i {
+    margin-right: 5px; }
+
+.experince {
+  grid-column: 1;
+  border-left: 1px solid #ccc;
+  padding-left: 2rem;
+  grid-row: 3 / -3; }
+
+.tech-skills {
+  grid-column: 2;
+  grid-row: 3 / span 1; }
+
+.tech-talks {
+  grid-column: 2;
+  grid-row: 4 / span 1; }
+  .tech-talks li:not(:last-child) {
+    margin-bottom: 1rem; }
