@@ -60,9 +60,6 @@
   padding: 0px;
   box-sizing: inherit; }
 
-html {
-  height: 100vh; }
-
 body {
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
@@ -85,8 +82,11 @@ a {
   background: linear-gradient(to left, #343434, #474747);
   padding: 2rem 3rem;
   display: grid;
-  grid-template-columns: 3fr 1fr;
-  grid-template-rows: repeat(10, minmax(10px, auto)); }
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: repeat(5, minmax(10px, auto));
+  gap: 0 15%;
+  max-width: 1500px;
+  margin: 0 auto; }
 
 .avatar {
   height: 6rem;
@@ -100,9 +100,13 @@ a {
 
 .experince {
   grid-column: 1;
+  grid-row: 3 / -2; }
+
+.experince,
+.education,
+.personal-projects {
   border-left: 1px solid #ccc;
-  padding-left: 2rem;
-  grid-row: 3 / -3; }
+  padding-left: 2rem; }
 
 .tech-skills {
   grid-column: 2;
@@ -111,5 +115,11 @@ a {
 .tech-talks {
   grid-column: 2;
   grid-row: 4 / span 1; }
-  .tech-talks li:not(:last-child) {
-    margin-bottom: 1rem; }
+
+.articles {
+  grid-column: 2;
+  grid-row: 5 / span 1; }
+
+.tech-talks li:not(:last-child),
+.articles li:not(:last-child) {
+  margin-bottom: 1rem; }
