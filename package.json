@@ -1,0 +1,19 @@
+{
+    "name": "B45i",
+    "version": "1.0.0",
+    "main": "index.js",
+    "scripts": {
+        "start": "concurrently \"npm:compile-sass\" \"npm:serve\"",
+        "compile-sass": "node-sass scss/main.scss css/style.css -w",
+        "serve": "http-server ."
+    },
+    "author": "B45i",
+    "license": "ISC",
+    "devDependencies": {
+        "http-server": "^0.12.3",
+        "node-sass": "^4.14.1"
+    },
+    "dependencies": {
+        "concurrently": "^5.2.0"
+    }
+}
