@@ -5,7 +5,7 @@
     "scripts": {
         "start": "concurrently \"npm:compile-sass\" \"npm:serve\"",
         "compile-sass": "node-sass scss/main.scss css/style.css -w",
-        "serve": "http-server ."
+        "serve": "http-server . -s"
     },
     "author": "B45i",
     "license": "ISC",
