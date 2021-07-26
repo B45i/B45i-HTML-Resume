@@ -24,7 +24,7 @@ body {
     // font-weight: 400;
     color: $text-secondary;
     padding: 3rem;
-    background: linear-gradient(#ccc, #eee);
+    background: linear-gradient(#eee, #fff);
 }
 
 li {
@@ -52,6 +52,7 @@ a {
     gap: 0 15%;
     max-width: 1500px;
     margin: 0 auto;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
 
 .avatar {

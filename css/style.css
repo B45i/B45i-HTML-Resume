@@ -65,7 +65,7 @@ body {
   font-family: 'Poppins', sans-serif;
   color: #b1b1b1;
   padding: 3rem;
-  background: linear-gradient(#ccc, #eee); }
+  background: linear-gradient(#eee, #fff); }
 
 li {
   list-style: none; }
@@ -86,7 +86,8 @@ a {
   grid-template-rows: repeat(5, minmax(10px, auto));
   gap: 0 15%;
   max-width: 1500px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  box-shadow: #26394d 0px 20px 30px -10px; }
 
 .avatar {
   height: 6rem;
